@@ -19,18 +19,52 @@
     </div>
     <div id="div-tab-containers">
       <div class="tab show-tab" id="tab1">
-        <div class="task-lists-div">
-          <button class="selected-list">All Tasks</button>
-        <div class="task-list-buttons">
-          <button class="b1">2</button>
-        </div>
-        </div>
+        <select name="category-to-show" class="show-category">
+          <option value="allTasks" selected>All Tasks</option>
+          <option value="Work">Work</option>
+          <option value="Chores">Chores</option>
+          <option value="Learning">Learning</option>
+          <option value="Health">Health</option>
+          <option value="Family">Family</option>
+          <option value="Friends">Friends</option>
+          <option value="Leisure">Leisure</option>
+          <option value="Holiday">Holiday</option>
+          <option value="Finance">Finance</option>
+          <option value="Other">Other</option>
+        </select>
         <button class="new-task-button">+ Task</button>
 
       </div>
       <div class="tab hidden" id="tab2">2222222222</div>
       <div class="tab hidden" id="tab3">33333333</div>
     </div>
+    <dialog class="task-modal">
+      <form class="task-modal-container">
+          <button class="close-modal close-task-modal"><strong>x</strong></button>
+          <input class="task-input" autocomplete="off" type="text" placeholder="Enter new task here">
+          <label> Choose a category:
+          <select name="category-add-task" class="assign-category">
+            <option value="Work">Work</option>
+            <option value="Chores">Chores</option>
+            <option value="Learning">Learning</option>
+            <option value="Health">Health</option>
+            <option value="Family">Family</option>
+            <option value="Friends">Friends</option>
+            <option value="Leisure">Leisure</option>
+            <option value="Holiday">Holiday</option>
+            <option value="Finance">Finance</option>
+            <option value="Other">Other</option>
+          </select>
+         </label>
+         <button class="add-task-button">Add</button>
+      </form>
+  </dialog>
+  <dialog class="list-modal">
+    <form class="list-modal-container">
+        <button class="close-modal close-list-modal"><strong>x</strong></button>
+        <input class="task-input" autocomplete="off" type="text" placeholder="Enter new task here"><button class="add-task-button">Add</button>
+    </form>
+</dialog>
     <script src="script.js"></script>
   </body>
 </html>
